@@ -1,0 +1,450 @@
+@import url("https:/https://fonts.google.com/specimen/Archivo+Black?query=black");
+@import url("https://fonts.google.com/specimen/Rubik");
+
+/* Variables */
+:root{
+    --fondo : #000000;
+    --primary-color: #270553;
+    --fontSize-title: 'archivo black';
+    --fontSize-title: 'rubik';
+
+}
+
+body{
+  background: var(--fondo);
+}
+
+nav.bg-portafolio{
+  background-color: gainsboro;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 0;
+}
+
+
+nav.bg-portafolio ul li{
+  margin-top: 14px;
+}
+
+nav.bg-portafolio ul li a{
+ color: #fff;
+ position: relative;
+ font-size: 20px;
+ margin: 0 12px;
+}
+
+nav.bg-portafolio ul li a::after{
+  width:0;
+  height: 2px;
+  background-color: rgb(50, 6, 122);
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 10px;
+  transition: .4s;
+}
+
+nav.bg-portafolio ul li a:hover{
+  color: var(--primary-color);
+}
+
+nav.bg-gym ul li a:hover::after{
+  width: 40%;
+  background: var(--primary-color);
+}
+
+
+h1 {
+  color: #ffffff;
+  font-size: 75px; 
+  font-weight: bold;
+  margin-top: 200px;
+  left: 15px;
+  position: relative;
+ 
+}
+
+p {
+  color: #ffffff;
+  margin-top: 50px;
+  font-size: 20px;
+  left: 5px;
+  position: relative;
+}
+
+
+.foto{ 
+  position: relative ;
+  width: 410px;
+  height: 410px;
+  left: 95px;
+  margin-top: 200px;
+  z-index: 2;
+}
+.cuadrado{
+  width: 450px;
+  height:400px;
+  margin-top: 120px;
+  bottom: 600px;
+  position: relative;
+  left: 150px;
+  z-index:1;
+  background-color: rgb(50, 6, 122);
+}
+
+.boton {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.animacion {
+  animation: boton-animation 0.5s ease-in-out;
+}
+
+@keyframes boton-animation {
+  0% {
+    background-color: #007BFF;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #007BFF;
+    transform: scale(1);
+  }
+}
+
+.boton {
+  position: relative;
+  bottom: 1100px; 
+  right: 7%;
+  transform: translateX(50%); 
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 700px;
+}
+
+.card{
+  padding-bottom: 30px;
+  background-color: #270553;
+  left: 100px;
+  bottom: 1000px;
+  height: 600px;
+  width: 600px;
+}
+
+.cardos{
+  left: 450px;
+  position: relative;
+  background-color: #270553;
+  bottom: 570px;
+  width: 600px;
+  height: 600px;
+}
+
+.cartres{
+  left: 400px;
+  position: relative;
+  background-color: #270553;
+  height: 600px;
+  width: 600px;
+  bottom:600px ;
+}
+
+.botonn {
+  position: relative;
+  bottom: 1100px; 
+  right: 340%;
+  transform: translateX(50%); 
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1300px;
+  height: 80px;
+}
+
+#estudios {
+  width: 100%;
+  text-align: left;
+  padding: 50px 0;
+  position: relative;
+  left: 40px;
+  bottom: 750px;
+}
+
+#estudios h1 {
+  font-size: 28px; /* Ajusta el tamaño del título */
+  color: #333; /* Cambia el color del título */
+  font-weight: 700;
+  margin-bottom: 20px; /* Reduce el espacio inferior */
+}
+
+#estudios .row {
+  display: flex; /* Usa flexbox para alinear elementos en la fila */
+  justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+}
+
+.card-destacadas {
+  flex-basis: calc(33.33% - 20px); /* Espacio igual entre las tarjetas */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px; /* Espacio entre las tarjetas */
+}
+
+.cont-info {
+  background: #f7f7f7; /* Fondo más claro */
+  padding: 20px;
+  border-radius: 0 0 4px 4px;
+  transition: background-color 0.4s;
+}
+
+.cont-info:hover {
+  background-color: #350579; /* Cambia el color al pasar el ratón */
+}
+
+.cont-info h1 {
+  font-size: 20px; /* Tamaño del título de la tarjeta */
+  color: #333; /* Cambia el color del título */
+  font-weight: 600;
+  margin-bottom: 10px; /* Reduce el espacio inferior */
+  position: relative;
+  bottom: 600px;
+}
+
+.cont-info p {
+  color: #666; /* Cambia el color del texto */
+  font-size: 16px;
+}
+.punto {
+  width: 10px; /* Ancho del punto */
+  height: 10px; /* Altura del punto */
+  background-color: var(--primary-color); /* Color del punto */
+  border-radius: 50%; /* Hacer el punto redondo */
+  position: absolute;
+  top: 0; /* Posicionar en la parte superior de la línea */
+  left: -4px; /* Ajustar la posición del punto */
+}
+
+/* Estilo para el contenedor del cuadro y el texto */
+.contenido {
+  /* display: flex; */
+  flex-direction: column;
+}
+
+/* Estilo para el cuadro café */
+.cuadro-cafe {
+  background-color: var(--primary-color); /* Color del cuadro café */
+  color: var(--secundary-color); /* Color del texto en el cuadro */
+  padding: 10px; /* Espaciado dentro del cuadro */
+  display: inline-block; /* Hacer que el cuadro se ajuste al contenido */
+  margin-left: 20px; /* Margen izquierdo para separar de la línea vertical */
+  margin-top: 10px;
+  margin-bottom: 10px; /* Margen inferior para separar los elementos */
+}
+
+
+
+.cuadro-cafe p{
+  padding: 0;
+}
+
+
+
+/* Estilo para el título sin cuadro */
+.titulo-sin-cuadro {
+  margin-left: 20px; /* Margen izquierdo para separar de la línea vertical */
+}
+
+
+
+.titulo-sin-cuadro p {
+  padding: 0;
+}
+
+
+
+
+#portafolio{
+  background: #D9D9D9;
+  padding-top: 90px ;
+  padding-bottom: 300px;
+  /* height: 100vh; */
+}
+
+
+
+#portafolio .container-fluid h2{
+  text-align: center;
+  font-size: 42px;
+}
+
+
+
+#portafolio h1{
+  padding-bottom: 20px;
+}
+
+
+#portafolio h1{
+  font-size: 22px;
+}
+
+#portafolio .contenido p{
+  padding: 0;
+  padding-bottom: 20px ;
+}
+
+/* Estilo para el contenedor */
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+/* Estilo para el rectángulo café */
+.rectangulo-cafe {
+  background-color: var(--primary-color); /* Color del rectángulo café */
+  color: var(--secundary-color); /* Color del texto */
+  padding: 20px; /* Espaciado dentro del rectángulo */
+  width: 400px; /* Ancho del rectángulo café */
+  margin-right: 20px; /* Margen derecho para separar del contenido */
+  height: 200px;
+}
+
+/* Estilo para el rectángulo blanco dentro del café */
+.rectangulo-blanco {
+  background-color: var(--secundary-color); /* Color del rectángulo blanco */
+  padding: 10px; /* Espaciado dentro del rectángulo blanco */
+  height: -webkit-fill-available;
+}
+
+.rectangulo-blanco img {
+  height: 20px;
+  width: 20px;
+}
+
+
+
+/* Estilo para el contenido (texto y botón) */
+.contenido {
+  flex-grow: 1; /* Hacer que ocupe el espacio restante */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Estilo para el botón "Ver Más" */
+.boton-cafe {
+  background-color: var(--fondo); /* Color del botón café */
+  color: var(--secundary-color); /* Color del texto en el botón */
+  padding: 10px 20px; /* Espaciado dentro del botón */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  border-radius: 5px; /* Hacer el botón redondeado */
+}
+
+.boton-cafe a {
+  color: var(--secundary-color);
+  text-decoration: none;
+}
+
+
+
+
+#portafolio .contenido1 p{
+  padding: 0;
+  padding-bottom: 20px ;
+  text-align: right;
+}
+
+
+/* Estilo para el contenedor */
+.contenedor1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Estilo para el rectángulo café */
+.rectangulo-cafe1 {
+  background-color: var(--fondo); /* Color del rectángulo café */
+  color: var(--secundary-color); /* Color del texto */
+  padding: 20px; /* Espaciado dentro del rectángulo */
+  width: 400px; /* Ancho del rectángulo café */
+  margin-left: 20px; /* Margen izquierdo para separar del contenido */
+  height: 200px;
+}
+
+/* Estilo para el rectángulo blanco dentro del café */
+.rectangulo-blanco1 {
+  background-color: var(--secundary-color); /* Color del rectángulo blanco */
+  padding: 10px; /* Espaciado dentro del rectángulo blanco */
+  height: -webkit-fill-available;
+}
+
+
+
+/* Estilo para el contenido (texto y botón) */
+.contenido1 {
+  flex-grow: 1; /* Hacer que ocupe el espacio restante */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-start;
+}
+
+
+/* Estilo para el botón "Ver Más" */
+.boton-cafe1 {
+  background-color: var(--primary-color); /* Color del botón café */
+  color: var(--secundary-color); /* Color del texto en el botón */
+  padding: 10px 20px; /* Espaciado dentro del botón */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  border-radius: 5px; /* Hacer el botón redondeado */
+}
+
+.boton-cafe1 a {
+  color: var(--secundary-color);
+  text-decoration: none;
+}
+
+/* Estilo para el footer */
+#footer {
+  background-color: var(--primary-color); /* Color de fondo del footer */
+  color: var(--secundary-color); /* Color del texto */
+  text-align: center; /* Centrar el contenido */
+  padding: 20px; /* Espaciado interior */
+}
+
+/* Estilo para el contenido dentro del footer */
+.footer-content {
+  max-width: 600px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+.logo-container {
+  padding: 15px;
+}
+
+
